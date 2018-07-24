@@ -97,11 +97,17 @@ dependencies {
     /**
      * rx系列
      */
-    implementation "com.trello:rxlifecycle:$rootProject.rxLifeCycleVersion"
-    implementation "com.trello:rxlifecycle-android:$rootProject.rxLifeCycleVersion"
-    implementation "com.trello:rxlifecycle-components:$rootProject.rxLifeCycleVersion"
-    implementation "io.reactivex:rxjava:$rootProject.rxjavaVersion"
-    implementation "io.reactivex:rxandroid:$rootProject.rxandroidVersion"
+//    implementation "com.trello:rxlifecycle:$rootProject.rxLifeCycleVersion"
+//    implementation "com.trello:rxlifecycle-android:$rootProject.rxLifeCycleVersion"
+//    implementation "com.trello:rxlifecycle-components:$rootProject.rxLifeCycleVersion"
+//    implementation "io.reactivex:rxjava:$rootProject.rxjavaVersion"
+//    implementation "io.reactivex:rxandroid:$rootProject.rxandroidVersion"
+
+    implementation "com.trello.rxlifecycle2:rxlifecycle:$rootProject.rxLifeCycle2version"
+    implementation "com.trello.rxlifecycle2:rxlifecycle-android:$rootProject.rxLifeCycle2version"
+    implementation "com.trello.rxlifecycle2:rxlifecycle-components:$rootProject.rxLifeCycle2version"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava2Version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroid2Version"
 
     /**
      * 网络请求系列

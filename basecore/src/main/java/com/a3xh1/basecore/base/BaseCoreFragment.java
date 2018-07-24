@@ -7,22 +7,23 @@ import android.support.annotation.Nullable;
 import android.view.View;
 
 import com.a3xh1.basecore.utils.StatusBarUtils;
-import com.trello.rxlifecycle.LifecycleProvider;
-import com.trello.rxlifecycle.LifecycleTransformer;
-import com.trello.rxlifecycle.RxLifecycle;
-import com.trello.rxlifecycle.android.FragmentEvent;
-import com.trello.rxlifecycle.android.RxLifecycleAndroid;
+import com.trello.rxlifecycle2.LifecycleProvider;
+import com.trello.rxlifecycle2.LifecycleTransformer;
+import com.trello.rxlifecycle2.RxLifecycle;
+import com.trello.rxlifecycle2.android.FragmentEvent;
+import com.trello.rxlifecycle2.android.RxLifecycleAndroid;
 
+import io.reactivex.Observable;
+import io.reactivex.subjects.BehaviorSubject;
 import me.yokeyword.fragmentation.SupportFragment;
-import rx.Observable;
-import rx.subjects.BehaviorSubject;
 
 /**
  * Author: GIndoc on 2017/10/21 下午2:50
  * email : 735506583@qq.com
  * FOR   :
  */
-public abstract class BaseCoreFragment<V , T extends BaseCorePresenter<V>> extends SupportFragment implements LifecycleProvider<FragmentEvent> {
+public abstract class BaseCoreFragment<V , T extends BaseCorePresenter<V>> extends SupportFragment
+        implements LifecycleProvider<FragmentEvent> {
     private T mPresent;
     protected String packageName;
     private final BehaviorSubject<FragmentEvent> lifecycleSubject = BehaviorSubject.create();
@@ -49,7 +50,7 @@ public abstract class BaseCoreFragment<V , T extends BaseCorePresenter<V>> exten
     @NonNull
     @CheckResult
     public final Observable<FragmentEvent> lifecycle() {
-        return lifecycleSubject.asObservable();
+        return lifecycleSubject.hide();
     }
 
     @Override

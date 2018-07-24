@@ -1,11 +1,12 @@
 package com.a3xh1.basecore.utils.rx;
 
 import com.a3xh1.basecore.base.IBaseView;
-import com.a3xh1.basecore.utils.rx.RxResultHelper;
 
-import rx.Observable;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
+import io.reactivex.ObservableSource;
+import io.reactivex.ObservableTransformer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.schedulers.Schedulers;
+import io.reactivex.Observable;
 
 /**
  * Author: GIndoc on 2017/12/27 上午11:33
@@ -14,11 +15,11 @@ import rx.schedulers.Schedulers;
  */
 public class MyRxTransformer {
 
-    public static <T> Observable.Transformer<T, T> transfom(final IBaseView view){
-        return new Observable.Transformer<T, T>() {
+    public static <T> ObservableTransformer<T, T> transfom(final IBaseView view) {
+        return new ObservableTransformer<T, T>() {
             @Override
-            public Observable<T> call(Observable<T> tObservable) {
-                return tObservable
+            public ObservableSource<T> apply(Observable<T> upstream) {
+                return upstream
                         .compose(view.<T>getBindToLifecycle())
                         .compose(RxResultHelper.<T>handleResult())
                         .subscribeOn(Schedulers.io())
