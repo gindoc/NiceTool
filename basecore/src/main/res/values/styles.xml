@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="BaseAppTheme">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="textColorError">@color/design_textinput_error_color_light</item>-->
+        <item name="textColorError">#ff2841</item>
+    </style>
+
+    <style name="DefaultDialogFragmentAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+        <item name="android:duration">300</item>
+    </style>
+
+    <style name="DefaultDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否有边框，如果有的话内容无法全屏 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- android:backgroundDimEnabled 是否允许对话框背景变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置沉浸式状态栏，即状态栏也会被影响-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- 是否有遮盖，一开始显示的不是设置的背景图片，而是白色或黑色背景，可能时间很短，解决方法就是设置为null，使用于activity，解决启动页刚开始有白色或黑色背景 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="TransparentBgDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否有边框，如果有的话内容无法全屏 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- android:backgroundDimEnabled 是否允许对话框背景变暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 设置沉浸式状态栏，即状态栏也会被影响-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- 是否有遮盖，一开始显示的不是设置的背景图片，而是白色或黑色背景，可能时间很短，解决方法就是设置为null，使用于activity，解决启动页刚开始有白色或黑色背景 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="SelectAddressStyle">
+        <item name="android:windowEnterAnimation">@anim/v_fragment_enter</item>
+        <item name="android:windowExitAnimation">@anim/v_fragment_exit</item>
+        <item name="android:duration">300</item>
+    </style>
+</resources>

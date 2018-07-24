@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="app_name">BaseCore</string>-->
+    <string name="api">http://192.168.0.193:8083</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose_city">Choose the city</string>
+    <string name="choose">Choose</string>
+    <string name="send_validate_code">Send verification code</string>
+    <string name="confirm">confirm</string>
+    <string name="money_symbol">$</string>
+    <string name="follow">follow</string>
+    <string name="to_follow">+Follow</string>
+    <string name="followed">Followed</string>
+    <string name="send_msg">direct message</string>
+    <string name="data_loading">In data loading, please wait a moment</string>
+    <string name="logon_expires">Login has expired, please log in again</string>
+    <string name="scan">Scan</string>
+    <string name="rest_time">%1$d days,%2$d:%3$d,%4$d second</string>
+    <string name="image_uploading">Picture uploaded, please wait a moment</string>
+    <string name="video_uploading">In video upload, please wait a moment</string>
+    <string name="refreshing">REFRESHING</string>
+    <string name="release_to_refresh">RELEASE TO REFRESH</string>
+    <string name="swipe_to_refresh">SWIPE TO REFRESH</string>
+    <string name="refresh_complete">COMPLETE</string>
+    <string name="release_to_load_more">RELEASE TO LOAD MORE</string>
+    <string name="swipe_to_load_more">SWIPE TO LOAD MORE</string>
+    <string name="loading_more">LOADING MORE</string>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+</resources>

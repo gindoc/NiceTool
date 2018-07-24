@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/header_height"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:orientation="horizontal">-->
+
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_click_background_transparent"
+        android:drawableLeft="@drawable/ic_left_999_24dp"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:minWidth="55dp"
+        android:paddingLeft="10dp"
+        android:text="按钮一"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="#424242"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@drawable/button_click_background_transparent"
+        android:gravity="center"
+        android:minWidth="55dp"
+        android:paddingRight="10dp"
+        android:text="按钮二"
+        android:textColor="@color/colorPrimary" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:background="#ededed" />
+    <!--</RelativeLayout>-->
+</FrameLayout>

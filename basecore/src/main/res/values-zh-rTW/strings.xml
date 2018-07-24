@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="app_name">BaseCore</string>-->
+    <string name="cancel">取消</string>
+    <string name="choose_city">選擇城市</string>
+    <string name="choose">選擇</string>
+    <string name="send_validate_code">發送驗證碼</string>
+    <string name="confirm">確定</string>
+    <string name="follow">關注</string>
+    <string name="money_symbol">NT$</string>
+    <string name="send_msg">私信</string>
+    <string name="to_follow">+關注</string>
+    <string name="followed">已關注</string>
+    <string name="data_loading">數據加載中，請稍候</string>
+    <string name="logon_expires">登入已過期，請重新登入</string>
+    <string name="scan">掃一掃</string>
+    <string name="rest_time">%1$d天%2$d時%3$d分%4$d秒</string>
+    <string name="image_uploading">圖片上傳中，請稍候</string>
+    <string name="video_uploading">視頻上傳中，請稍候</string>
+    <string name="refreshing">重繪中</string>
+    <string name="release_to_refresh">鬆開重繪</string>
+    <string name="swipe_to_refresh">下拉重繪</string>
+    <string name="refresh_complete">重繪完成</string>
+    <string name="release_to_load_more">鬆開加載更多</string>
+    <string name="swipe_to_load_more">上拉加載更多</string>
+    <string name="loading_more">加載中</string>
+</resources>
